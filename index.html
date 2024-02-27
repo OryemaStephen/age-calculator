@@ -16,14 +16,15 @@
         <main>
             <div id="container">
                 <h1>Age Calculator</h1>
-                <div id="age-input">
+                <form id="age-input">
                     <label for="day">Day</label>
                     <label for="month">Month</label>
                     <label for="year">Year</label><br>
-                    <input type="number" id="day" min="1" max="31" required>
-                    <input type="number" id="month" min="1" max="12" required>
-                    <input type="number" id="year" min="1900" max="2024" required>
-                </div>
+                    <input type="number" id="day" name="day" min="1" max="31" required>
+                    <input type="number" id="month" name="month" min="0" max="11" required>
+                    <input type="number" id="year" name="year" min="1900" max="2024" required><br>
+                    <input type="button" value="Calculate" id="btn" onclick="getAge()">
+                </form>
                 <hr>
                 <div id="age-display">
                     <span id="years"></span><span>years.</span><br>
