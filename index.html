@@ -7,13 +7,31 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Age Calculator</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>               
-        
+    <body>   
+        <main>
+            <div id="container">
+                <h1>Age Calculator</h1>
+                <div id="age-input">
+                    <label for="day">Day</label>
+                    <label for="month">Month</label>
+                    <label for="year">Year</label><br>
+                    <input type="number" id="day" min="1" max="31" required>
+                    <input type="number" id="month" min="1" max="12" required>
+                    <input type="number" id="year" min="1900" max="2024" required>
+                </div>
+                <hr>
+                <div id="age-display">
+                    <span id="years"></span><span>years.</span><br>
+                    <span id="months"></span><span>months.</span><br>
+                    <span id="days"></span><span>days.</span>
+                </div>
+            </div>
+        </main>      
         <script src="app.js" async defer></script>
     </body>
 </html>
